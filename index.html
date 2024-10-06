@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Analysis &amp; Best Financial</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.css" integrity="sha512-gFn7XRm5v3GlgOwAQ80SXDT8pyg6uaV9JbW2OkNx5Im2jR8zx2X/3DbHymcZnUraU+klZjRJqNfNkFN7SyR3fg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="overflow-x: hidden;">
+    <div class="nav px-3 sticky-top" style="background-color: #081728;">
+        <img src="img/footer logo.svg" width="150" height="50" style="margin-top: 10px;">
+        <input style="z-index: 1; background-color: #0a1e35;border: none;border-radius: 10px; width: 43%; padding: 5px; margin: 10px;font-size: 13px;padding: 10px;margin-left: 23px;" type="text" placeholder="Search stocks, mutual funds, smallcases, ETFs etc." />
+        <img class="p-1 rounded" src="img/backslash-icon.svg" style="z-index: 2; margin-left: -45px; background-color:  #162e49;; width: 22px; height: 22px; margin-top: 20px;" >
+        <ul class= "list-inline">
+            <li class="list-inline-item text-white" style="margin-top: 15px; margin-left:40px;font-size: 13px;"><img src="img/Screenshot 2024-10-01 174523.png" width="15" height="15">&nbsp;&nbsp;portfolio</li>&nbsp;
+            <li class="list-inline-item text-white" style="margin-left: 15px;font-size: 13px;"><img src="img/gold.png" width="20" height="20">&nbsp;&nbsp;Gold</li>&nbsp;
+            <li class="list-inline-item text-white" style="margin-left: 15px;font-size: 13px;"><img src="img/screener1.svg" width="20" height="20">&nbsp;&nbsp;Screener</li>&nbsp;
+            <li class="list-inline-item text-white" style="margin-left: 15px;font-size: 13px;"><img src="img/more.png" width="15" height="15">&nbsp;&nbsp;More<select style="background-color: #081728; color: white; border: none;" ></select></li>&nbsp;
+            
+            <li class="list-inline-item text-white" style="margin-left: 15px;font-size: 13px;"><button class="px-3" style="height: 40px;border: none; background-color: white;border-radius: 15px;"><img src="img/login-avatar.png" width="20" height="20">&nbsp;&nbsp;Login<select style="background-color: white; color: black; border: none;" ></select></button></li>&nbsp;
+        </ul>
+    </div>
+    <div class="row px-2 " style="background-color: #0a1e35;">
+        <div class="col mx-3 w-100">
+            <button class="btn1 p-1 mt-5 ">NIFTY50 &nbsp; &nbsp;25,796.90</button>
+            <button class="btn1 p-1 mt-5">SENSEX &nbsp;<span style="font-size: 15px;">&#9662;</span>84,266.29</button>
+            <h1 class="text-white fs-4 my-4 pb-4" style="font-weight: bold;">The market is in<br><span class="highlight"> Greed</span>&nbsp;zone...</h1>
+         </div>
+        <div class="col">
+            <div class="daily" style="text-align: end; font-size: 13px; margin-top: 50px;">
+                <button class="daily-button px-4" style="background: none; color: blue;border: none;">
+                    Daily
+                    <span class="arrows">&#9650;&#9660;</span> 
+                </button>
+            </div>
+                
+             <div class="img mt-4 " style="text-align: end;">
+                <div class="col list-inline-item mx-3 " >
+                    <div class="web">
+                        <img src="img/orange.svg "><h6 class="text-center">WED</h6>
+                    </div>
+                </div>
+                <div class="col list-inline-item mx-3 ">
+                    <div class="web">
+                        <img src="img/orange.svg ">
+                       <h6 class="text-center">THU</h6>
+                    </div>
+                    </div>
+                    <div class="col list-inline-item mx-3">
+                        <div class="web">
+                            <img src="img/orange.svg">
+                           <h6 class="text-center">FRI</h6>
+                        </div>
+                    </div>
+                    <div class="col list-inline-item mx-3" style="position: relative;">
+                        <div class="web">
+                            <img src="img/orange.svg">
+                           <h6 class="text-center">MON</h6>
+                        </div>
+                    </div>
+                    <div class="col list-inline-item mx-3" >
+                        <div class="web">
+                            <img class="px-2" src="img/orange.svg">
+                           <h6 class="text-center">TODAY<br></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+    </div>  
+    <div class="container-fluid mt-5">
+        <div class="card mx-3">
+            <h6 style="display: inline-block; padding: 10px;">Market and sectors</h6>
+            <h6 style="text-align: end;display: inline-block; margin-top: -50px; padding: 10px;"><a style="text-decoration: none;" href="#">See All</a></h6>
+        <table class="table text-center " style="width: 100%;">
+            <tr>
+                <td>
+                    <div class="row mt-4">
+                        <div class="col">NIFTY 50</div>
+                        <div class="col"><img src="img/image1.png" width="100" height="80"></div>
+                        <div class="col">25,809.35<br><span class="red-arrow">&#9660;&nbsp;0.01%</span></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="row mt-4">
+                        <div class="col">NIFTY 100<br>Largecap</div>
+                        <div class="col"><img src="img/usd.png" width="100" height="80"></div>
+                        <div class="col">26,894.35<br><span class="green-arrow">&#9650;&nbsp;0.01%</span></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="row mt-4">
+                        <div class="col">NIFTY Bank</div>
+                        <div class="col"><img src="img/image1.png" width="100" height="80"></div>
+                        <div class="col">52,969.20<br><span class="red-arrow">&#9660;&nbsp;0.02%</span></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="row mt-4">
+                        <div class="col">USD/INR</div>
+                        <div class="col"><img src="img/usd.png" width="100" height="80"></div>
+                        <div class="col">83.92<br><span class="green-arrow">&#9650;&nbsp;0.01%</span></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="row mt-4">
+                        <div class="col">NIFTY 100<br>Midcap</div>
+                        <div class="col"><img src="img/usd.png" width="100" height="80"></div>
+                        <div class="col">60,343.05<br><span class="green-arrow">&#9650;&nbsp;0.01%</span></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="row mt-4">
+                        <div class="col">NIFTY IT</div>
+                        <div class="col"><img src="img/usd.png" width="100" height="80"></div>
+                        <div class="col">42,419.35<br><span class="green-arrow">&#9650;&nbsp;0.13%</span></div>
+                    </div>
+                </td> 
+            </tr>
+            <tr>
+                <td>
+                    <div class="row mt-4">
+                        <div class="col">Gold<br>Midcap</div>
+                        <div class="col"><img src="img/goldimg.png" width="100" height="80"></div>
+                        <div class="col">7,751.12<br><span class="red-arrow">&#9650;&nbsp;0.69%</span></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="row mt-4">
+                        <div class="col">NIFTY 100<br>Smallcap</div>
+                        <div class="col"><img src="img/usd.png" width="100" height="80"></div>
+                        <div class="col">19,330.55<br><span class="green-arrow">&#9650;&nbsp;0.79%</span></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="row mt-4">
+                        <div class="col">NIFTY<br>Pharma</div>
+                        <div class="col"><img src="img/usd.png" width="100" height="80"></div>
+                        <div class="col">23,299.70<br><span class="green-arrow">&#9650;&nbsp;0.08%</span></div>
+                    </div>
+                </td>
+            </tr> 
+        </table>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="display: flex;">
+
+        <div class="card mb-5 mx-3 mt-5 p-3">
+          <h6 class="p-2">Get started</h6>
+            <div class="content" style="display: flex;">
+                <div class="head1 p-2"><h4>Track your stocks and<br> mutual fund<br> investments</h4></div>
+                <div class="para px-3">
+                    <p><img src="img/icon1.svg">&nbsp;&nbsp;Compare diversification score with the community</p>
+                    <p><img src="img/icon2.svg">&nbsp;&nbsp;Predict expected returns of your portfolio</p>
+                    <p><img src="img/icon3.svg">&nbsp;&nbsp;Find out red flags in your portfolio</p>
+                </div>
+               
+            </div>
+            <p style="font-size: 15px;color: gray;">Import in 1-tap! takes less than a minute!</p>
+            <button class="p-2 mb-3 rounded" style="color: white;background-color:  #0a1e35; border: none;">Start</button>
+            <hr>
+            <div class="card " style="border: none;">
+                <h6 style="display: inline-block; padding: 10px;">Today's stocks</h6>
+                <h6 style="text-align: end;display: inline-block; margin-top: -50px; padding: 10px;"><a style="text-decoration: none;" href="#">Large Cap &#9650;&#9660;</a></h6>
+            </div> 
+            <div class="btn mt-2" style="text-align: left;">
+                <button class="px-4 " style="border-radius: 25px;background-color:#0a1e35;color: white; border: none; padding: 10px; font-size: 12px;"><img src="img/gainers.svg">&nbsp;&nbsp;Gainers</button>
+                <button class="px-4" style="border-radius: 25px; background: white; border-color: rgb(231, 228, 228); padding: 9px; font-size: 12px;"><img src="img/losers.svg">&nbsp;&nbsp;Losers</button>
+                <button class="px-4" style="border-radius: 25px; background: white; border-color: rgb(231, 228, 228); padding: 9px;font-size: 12px;"><img src="img/most_active.svg">&nbsp;&nbsp;More Active</button>
+                <button class="px-4" style="border-radius: 25px; background: white; border-color: rgb(231, 228, 228); padding: 9px;font-size: 12px;"><img src="img/52w_high.svg">&nbsp;&nbsp;52W High</button>
+                <button class="px-4" style="border-radius: 25px; background: white; border-color: rgb(231, 228, 228); padding: 9px;font-size: 12px;"><img src="img/52w_low.svg">&nbsp;&nbsp;52W Low</button>
+            </div>   
+            <div class="card mt-3 mb-3" style="height: 200px;">
+                <img src="img/download.svg" height="50" width="50" style="margin-left: 45%;margin-top: 46px;">
+                <h6 style="color: rgb(170, 167, 167); text-align: center;">No relevent stocks</h6>
+            </div>
+            <hr>
+
+            <div class="card " style="border: none;">
+                <h6 style="display: inline-block; padding: 10px;">Mutual funds and ETFs</h6>
+                <h6 style="text-align: end;display: inline-block; margin-top: -50px; padding: 10px;"><a style="text-decoration: none;" href="#">1Y Return&#9650;&#9660;</a></h6>
+            </div> 
+            <div class="btn mt-2" style="text-align: left;">
+                <button class="px-4 " style="border-radius: 25px;background-color:#0a1e35;color: white; border: none; padding: 10px; font-size: 12px;"><img src="img/LargeCap.svg">&nbsp;&nbsp;Large Cap</button>
+                <button class="px-4" style="border-radius: 25px; background: white; border-color: rgb(231, 228, 228); padding: 9px; font-size: 12px;"><img src="img/MidCap.svg">&nbsp;&nbsp;Mid Cap</button>
+                <button class="px-4" style="border-radius: 25px; background: white; border-color: rgb(231, 228, 228); padding: 9px;font-size: 12px;"><img src="img/SmallCap.svg">&nbsp;&nbsp;Small Cap</button>
+                <button class="px-4" style="border-radius: 25px; background: white; border-color: rgb(231, 228, 228); padding: 9px;font-size: 12px;"><img src="img/TaxSaving.svg">&nbsp;&nbsp;Tax Saving</button>
+                <button class="px-4" style="border-radius: 25px; background: white; border-color: rgb(231, 228, 228); padding: 9px;font-size: 12px;"><img src="img/IndexFunds.svg">&nbsp;&nbsp;Income Funds</button>
+                <button class="mt-2" style="width: 125px;height: 40px; border-color: rgb(212, 209, 209); border-radius: 25px;background-color: white; margin-left: 9px;"><img src="img/ETFs.svg">&nbsp;&nbsp;ETFs</button>  
+
+            </div> 
+            <div class="card px-3 mt-3 " style="border: none;">
+                <h6 style="display: inline-block; padding: 10px; color: rgb(225, 222, 222);"><b>FUNDS</b></h6>
+                <h6 style="text-align: end;display: inline-block; margin-top: -50px; padding: 10px; color: rgb(225, 222, 222);"><b>RETURNS</b></h6>
+            </div> 
+            <div class="card px-4" style="border: none;">
+                <img style="display: inline-block;" src="img/ES.png" width="40" height="40">
+                <h6 style="display: inline-block; padding: 10px; color:black ;margin-left: 50px; margin-top: -50px;"><b>
+                   Quant Large Cap Fund<br><span style="color: rgb(210, 209, 209);">Equity • Growth</span>    </b></h6>
+                <h6 style="text-align: end;display: inline-block; margin-top: -50px; padding: 10px; color: green"><b>46.58%&nbsp;&nbsp;<img src="img/plus.svg" width="22" height="22"></b></h6>
+            </div>
+            <hr> 
+
+            <div class="card px-4" style="border: none;">
+                <img style="display: inline-block;" src="img/M.png" width="40" height="40">
+                <h6 style="display: inline-block; padding: 10px; color:black ;margin-left: 50px; margin-top: -50px;"><b>
+                Baroda BNP Paribas Large Cap Fund<br><span style="color: rgb(210, 209, 209);">Equity • Growth</span>    </b></h6>
+                <h6 style="text-align: end;display: inline-block; margin-top: -50px; padding: 10px; color: green"><b>46.09%&nbsp;&nbsp;<img src="img/plus.svg" width="22" height="22"></b></h6>
+            </div>
+            <hr> 
+
+            <div class="card px-4" style="border: none;">
+                <img style="display: inline-block;" src="img/G.png" width="40" height="40">
+                <h6 style="display: inline-block; padding: 10px; color:black ;margin-left: 50px; margin-top: -50px;"><b>
+                Bandhan Large Cap Fund<br><span style="color: rgb(210, 209, 209);">Equity • Growth</span>    </b></h6>
+                <h6 style="text-align: end;display: inline-block; margin-top: -50px; padding: 10px; color: green"><b>48.04%&nbsp;&nbsp;<img src="img/plus.svg" width="22" height="22"></b></h6>
+            </div>
+            <hr> 
+
+            <div class="card px-4" style="border: none;">
+                <img style="display: inline-block;" src="img/120.png" width="40" height="40">
+                <h6 style="display: inline-block; padding: 10px; color:black ;margin-left: 50px; margin-top: -50px;"><b>
+                Invesco India Largecap Fund<br><span style="color: rgb(210, 209, 209);">Equity • Growth</span>    </b></h6>
+                <h6 style="text-align: end;display: inline-block; margin-top: -50px; padding: 10px; color: green"><b>45.68%&nbsp;&nbsp;<img src="img/plus.svg" width="22" height="22"></b></h6>
+            </div>
+            <hr> 
+
+            <div class="card px-4" style="border: none;">
+                <img style="display: inline-block;" src="img/JMF.png" width="40" height="40">
+                <h6 style="display: inline-block; padding: 10px; color:black ;margin-left: 50px; margin-top: -50px;"><b>
+                JM Large Cap Fund<br><span style="color: rgb(210, 209, 209);">Equity • Growth</span>    </b></h6>
+                <h6 style="text-align: end;display: inline-block; margin-top: -50px; padding: 10px; color: green"><b>45.43%&nbsp;&nbsp;<img src="img/plus.svg" width="22" height="22"></b></h6>
+            </div>
+    </div>
+        <div class="box2 p-3 mt-4">
+            <img style="border-radius: 20px;" src="img/right box2.png" width="500" height="250">
+       
+            <div class="card mt-5 ">
+                <h6 class="p-2" style="display: inline-block; ">Today's stocks</h6>
+                <h6 style="text-align: end;display: inline-block; margin-top: -50px; padding: 10px;"><a style="text-decoration: none;" href="#">Large Cap &#9650;&#9660;</a></h6>
+                
+                <div class="btn mt-2 " style="text-align: left;">
+                    <button class="px-4 mb-3" style="border-radius: 25px;background-color:#0a1e35;color: white; border: none; padding: 10px; font-size: 12px; "><img src="img/all.svg">&nbsp;&nbsp;All</button>
+                    <button class="px-4" style="border-radius: 25px; background: white; border-color: rgb(231, 228, 228); padding: 9px; font-size: 12px;"><img src="img/news.svg">&nbsp;&nbsp;News</button>
+                    <button class="px-4" style="border-radius: 25px; background: white; border-color: rgb(231, 228, 228); padding: 9px;font-size: 12px;"><img src="img/macro.svg">&nbsp;&nbsp;Macro</button>
+                    <button class="px-4" style="border-radius: 25px; background: white; border-color: rgb(231, 228, 228); padding: 9px;font-size: 12px;"><img src="img/earnings.svg">&nbsp;&nbsp;Earnings</button><br>
+                    <button class="px-4" style="border-radius: 25px; background: white; border-color: rgb(231, 228, 228); padding: 9px;font-size: 12px;"><img src="img/corpAction.svg">&nbsp;&nbsp;Corp Action</button>
+                    <button class="px-4" style="border-radius: 25px; background: white; border-color: rgb(231, 228, 228); padding: 9px;font-size: 12px;"><img src="img/dividends.svg">&nbsp;&nbsp;Dividends</button>
+                </div>
+                <div class="nifty-container mx-3 mt-4">
+                    <div class="nifty-label">
+                        <span class="icon">N</span>
+                    </div>
+                    <span class="nifty-text">NIFTY 50</span>
+                    <span class="nifty-arrow">&#x25BC;</span>
+                </div>
+                <p class="mx-3 mt-3">SEBI says minimum contract size for index derivatives will be increased</p>
+                <div class="card mx-3" style="background-color: rgb(243, 238, 238);">
+                    <p class="mx-3">The Securities and Exchange Board of India (SEBI) has<br> announced a set of regulations for equity index derivati...</p>
+                </div>
+                <p style="color: rgb(187, 183, 183);font-size: 13px;" class="mt-3 mx-3">21 HOURS AGO <span style="margin-left: 5%; font-size: 13px; color: rgb(187, 183, 183);">CAPITAL MARKET - LIVE</span></p>
+                <hr class="mx-3">
+
+
+                <div class="nifty-container mx-3 mt-4">
+                    <div class="nifty-label " style="display: inline-block">
+                        <span><img src="img/MITT.png" width="12" height="10"></span>
+                    </div>
+                    <span class="nifty-text">MITTAL</span>
+                    <span class="nifty-arrow">&#x25BC;</span>  
+                </div>
+                <h6 style="margin-left: 85%; margin-top: -5%; color: gray;">Ex Date</h6>
+                <div class="card" style="border: none;">
+                    <h6 class="p-2 mx-3" style="display: inline-block; ">Rights Issue</h6>
+                    <h6  style="text-align: end;display: inline-block; margin-top: -50px; padding: 10px;">Oct 3, 2024</h6>
+                <div class="card mx-3 px-3 p-2" style="background: rgb(244, 244, 244); font-size: 13px;">1:2 Rights Issue of Equity Shares</div>
+            </div> 
+            <hr class="mx-3">
+
+            <div class="nifty-container mx-3 mt-4">
+                <div class="nifty-label " style="display: inline-block">
+                    <span><img src="img/KPI.png" width="10" height="10"></span>
+                </div>
+                <span class="nifty-text">KPIGREEN</span>
+                <span class="nifty-arrow">&#x25BC;</span>  
+            </div>
+            <h6 style="margin-left: 85%; margin-top: -5%; color: gray;">Ex Date</h6>
+            <div class="card" style="border: none;">
+                <h6 class="p-2 mx-3" style="display: inline-block; ">Cash Dividend</h6>
+                <h6  style="text-align: end;display: inline-block; margin-top: -50px; padding: 10px;">Oct 4, 2024</h6>
+            <div class="card mx-3 px-3 p-2" style="background: rgb(244, 244, 244); font-size: 13px;">Final • Dividend/share:₹0.20</div>
+        </div> 
+        <hr class="mx-3">
+
+       <br>
+       <h6 style="margin-left:83%; color: gray;">Ex Date</h6>
+       <h5 class="mx-4 fs-6">Overall Comprehensive Risk</h5>
+        <div class="card" style="border: none;">
+            <h6  style="text-align: end;display: inline-block; margin-top: -45px; padding: 10px;">Oct 4, 2024</h6>
+        <div class="card mx-3 px-3 p-2" style="background: rgb(244, 244, 244); font-size: 13px;">Final • Dividend/share:₹0.20<hr>Current Value :3.14</div> 
+    <hr class="mx-3">
+    <div class="nifty-container mx-3 mt-4">
+        <div class="nifty-label " style="display: inline-block">
+            <span><img src="img/MITT.png" width="12" height="10"></span>
+        </div>
+        <span class="nifty-text">MITTAL</span>
+        <span class="nifty-arrow">&#x25BC;</span>  
+    </div>
+    <div class="card" style="border: none;">
+        <p class="p-2 mx-3" style="display: inline-block; ">Coal output rises nearly 6% on year in first half<br> of FY25</p>
+        <h6  style="text-align: end;display: inline-block; margin-top: -50px; padding: 10px;">Oct 3, 2024</h6>
+    <div class="card mx-3 px-3 p-2" style="background: rgb(244, 244, 244); font-size: 13px;">Ministry of Coal has reported steady increase in coal production during the<br> month of September 2024. India..</div>
+    </div> 
+    <p style="color: rgb(187, 183, 183);font-size: 13px;" class="mt-3 mx-3">23 HOURS AGO <span style="margin-left: 5%; font-size: 13px; color: rgb(187, 183, 183);">CAPITAL MARKET - LIVE</span></p>
+    <button class="rounded mx-3 p-2" style="border-color: rgb(203, 200, 200);background-color: white;">See All</button>
+    <hr class="mx-3">
+    </div>
+    </div>
+    </div>
+    </div>
+      
+
+    <!--Curated screens and deals-->
+    <div class="container-fluid mb-5 m-3">
+        <div class="card p-4">
+        <h6 class="px-3 mb-3 mt-3">Curated screens and deals</h6>
+       
+            <table style="width:100%;">
+                <tr  style="background-color:  #0a1e35;color: white;border: none">
+                  <th style="padding: 2%; margin: 10px;"><img src="img/list1.svg">&nbsp;&nbsp;Stock Screens <span style="font-size: 24px;font-weight: bold;color: white;margin-left: 10px;">&#43;</span></th>
+                  <th style="padding: 10px;"><img src="img/list2.svg">&nbsp;&nbsp;Deals <span>&#43;</span></th> 
+                  <th style="padding: 10px;"><img src="img/list3.svg">&nbsp;&nbsp;Mutual Fund Screens<span>&#43;</span></th>
+                </tr>
+                <tr  style="background-color:  #0a1e35;color: white;">
+                  <td style="padding: 2%">Cash Rich Smallcaps<img src="img/pluss.svg"></td>
+                  <td style="padding: 10px;">Latest deals by Radhakishan Damani<img src="img/pluss.svg"></td>
+                  <td style="padding: 10px;">Top Tax Savers<img src="img/pluss.svg"></td>
+                </tr>
+                <tr  style="background-color:  #0a1e35;color: white;">
+                  <td style="padding: 2%">Near 52W lows<img src="img/pluss.svg"></td>
+                  <td style="padding: 10px;">Latest deals by the Govt of Singapore<img src="img/pluss.svg"></td>
+                  <td style="padding: 10px;">Long Term Compounders<img src="img/pluss.svg"></td>
+                </tr>
+                <tr  style="background-color:  #0a1e35;color: white;">
+                  <td style="padding: 2%">Momentum Monsters<img src="img/pluss.svg"></td>
+                  <td style="padding: 10px;">Latest deals by the Vanguard group<img src="img/pluss.svg"></td>
+                  <td style="padding: 10px;">Concentrated Bets<img src="img/pluss.svg"></td>
+                </tr>
+              </table>
+
+            </div>    
+       
+    </div>
+    <!--hand image-->
+    
+    <div class="container-fluid bg-dark px-5 pt-5 ">
+        <div class="phone">
+        <h1 class="mt-5 " style="color: blue;display: inline-block;font-size: 55px  ;">Everything you need to<br> redefine your investing<br> experience</h1>
+        <div class="phone" style="display:flex;">
+            <div class="al" style="display: flex; width: 100%;">
+            <div class="assets mt-5" style="color: white;">
+                <h4 style="font-size: 20px; color: gray;">Assets tracked worth</h4>
+                <h4 style="font-size:33px">20,000 Cr</h4>
+                <h4 class="mt-5" style="font-size: 22px; color: gray;">downloads</h4>
+                <h4 style="font-size:30px">5M+</h4>
+                <button class="rounded " style="background: white; border: none;font-size: 15px;padding: 8%; width: 130%; margin-top: 100px;"><img style="margin-top: -5px;" src="img/apple.png" width="18" height="18">&nbsp;&nbsp;<b>Download on iOS</b></button>
+           
+            </div>
+            <div class="Lovely mt-5" style="color: white; margin-left: 10%;">
+                <h4 style="font-size: 20px; color: gray;">Lovely by</h4>
+                <h4 style="font-size:33px">55 L+ investors</h4>
+                <h4 class="mt-5" style="font-size: 20px; color: gray;">Rated on Google Play</h4>
+                <h4 style="font-size:33px">4.5</h4>
+                <button class="rounded " style="background: white; border: none;font-size: 15px;padding: 7%; width: 110%; margin-top: 100px;"><img style="margin-top: -5px;" src="img/playstore.svg" width="18" height="18">&nbsp;&nbsp;<b>Download on Android</b></button>
+            </div>  
+        </div>
+        <!--hand image-->
+        <div class="img">
+            <img src="img/phone.png" width="600" height="750" style="z-index: 2; margin-top: -30%;margin-left: 9%;">
+        </div> 
+        </div>
+       
+
+    </div> 
+
+   
+</div>
+
+<footer class="bg-dark " style="background-color: #0a1e35;color: #ccc;px 0;">
+    <div class="footer-content " style="width: 100%; padding-top: 10%; margin-bottom: 10%;">
+        <div class="footer-logo" style="max-width: 300px;">
+            <h2><img src="img/footer logo.svg" width="150" height="50"></h2>
+            <p class="fs-6">from <img src="img/dice.png" height="20" width="20"> smallcase</p>
+            <p style="width: 120%;font-size: 14px;">Tickertape provides data, information &amp; content for Indian stocks, mutual funds, ETFs &amp; indices.</p>
+            <p class="mt-5" style="width: 120%;font-size: 14px;">Anchorage Technologies Private Limited, #51, 3rd Floor, Le Parc Richmonde, Richmond Road, Shanthala Nagar, Richmond Town, Bangalore - 560025</p>
+        </div>
+
+        <div class="footer-links" style="margin-left: 10;">
+            <div class="column " style="width: 50px">
+                <ul>
+                    <li>Assets</li>
+                    <li>Stocks</li>
+                    <li>Mutual Funds</li>
+                </ul>
+            </div>
+            <div class="column">
+                
+                <ul>
+                    <li>Tools</li>
+                    <li>MMI</li>
+                    <li>Stock Screener</li>
+                    <li>MF Screener</li>
+                    <li>Market Movers</li>
+                </ul>
+            </div>
+            <div class="column">
+               
+                <ul>
+                    <li>Learn &amp; Share</li>
+                    <li>Social</li>
+                    <li>Learn</li>
+                    <li>Blog</li>
+                    <li>Glossary</li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li>Fine Print</li>
+                    <li>Pricing</li>
+                    <li>Disclosures</li>
+                    <li>Terms &amp; Conditions</li>
+                    <li>Privacy Policy</li>
+                    <li>Analytical &amp; Information Tools</li>
+                    <li>Community Guidelines</li>
+                </ul>
+            </div>
+            </div>
+    </div>
+
+<hr>
+    <div class="container-fluid px-5 " style="display: flex; justify-content: space-around;">
+        <div class="footer-bottom" style="display: inline;">
+            <div class="social-links" style="display: inline-block;">
+                <h6>Find Us On</h6>
+                <a href="#"><img src="img/211928_social_youtube_icon.png" alt="Facebook" width="10" height="13"></a>
+                <a href="#"><img src="img/1161953_instagram_icon.png" alt="Twitter" width="10" height="10"></a>
+                <a href="#"><img src="img/5282551_tweet_twitter_twitter logo_icon.png" alt="LinkedIn" width="10" height="10"></a>
+                <a href="#"><img src="img/104826_linkedin_icon.png" alt="LinkedIn"width="10" height="10"></a>
+            </div>
+        </div>
+        <div class="suport px-5">
+            <p>Help and Support: <a href="mailto:support@tickertape.in"><br>support@tickertape.in</a></p>
+        </div>
+        <div class="downloads">
+            <p>50L+ downloads<br>4.5 ⭐ App Rating</p>
+            <p></p>
+        </div>
+    </div>
+
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script> 
+</body>
+</html>

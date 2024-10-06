@@ -1,0 +1,142 @@
+
+.search-box{
+    width: 500px;
+    margin-left: 3%;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    background-color:  #192f48;
+    
+    color: var(--colors_text_primary);
+    border: 1px solid rgba(11, 29, 53, 0.7);    
+}
+.key-icon {
+    background-color:  #16283e;
+    color: white;
+    padding: 6px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left:-40px;
+    z-index: 2;
+}
+.head{
+    margin-left:5%;
+}
+.head li a{
+    text-decoration: none;
+    color: white;
+}
+.web h6{
+    font-size: 10px;
+    color: gray;
+}
+.btn1{
+    border-radius: 10px;
+    background-color:  #192f48;
+    border: navy;
+    color: white;
+    font-size: 12px;
+    width: 30%;
+}
+.highlight{
+  color: rgb(237, 155, 2);
+}
+th, td {
+    border: 1px solid rgb(241, 239, 239);
+    border-radius: 10px;
+  }
+  
+.getbox{
+    display: flex;
+}
+.red-arrow {
+        color: red;    
+    }
+    
+.green-arrow {
+    color: green;
+}
+.nifty-container {
+    display: inline-flex;
+    align-items: center;
+    background-color: #fceced; /* Light pink background */
+    padding: 5px 10px;
+    border-radius: 8px;
+    width: 25%;
+}
+
+.nifty-label {
+    display: inline-block;
+    background-color: #fdf4c5; /* Light yellow background for the icon */
+    padding: 1px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.icon {
+    font-weight: bold;
+    color: #866412; /* Dark yellow color for the "N" */
+    font-size: 16px;
+}
+
+.nifty-text {
+   
+    font-size: 13px;
+    margin-right: 8px;
+}
+
+.nifty-arrow {
+    color: red;
+    font-size: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.footer-logo p {
+    margin: 10px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 600px;
+    width: 100%;
+}
+.column h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.column ul {
+    list-style-type: none;
+}
+
+.column ul li {
+    margin-bottom: 5px;
+}
+
+
+
